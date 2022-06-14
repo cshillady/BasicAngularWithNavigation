@@ -1,0 +1,28 @@
+<div id="page3">
+  <table>
+    <tr>
+      <th>Index</th>
+      <th>Element Name</th>
+      <th>Symbol</th>
+      <th>Atomic Number</th>
+      <th>Atomic Weight</th>
+      <th>Discovered</th>
+    </tr>
+    <tr *ngFor="let element of elementList; let i = index; let o = odd; let e = even" [ngClass]="{ even: e, odd: o }">
+      <td> {{ i + 1 }} </td>
+      <td> {{ element.name }} </td>
+      <td> {{ element.symbol }} </td>
+      <td> {{ element.atomicNumber }} </td>
+      <td> {{ element.atomicWeight }} </td>
+      <td> {{ element.discovered }} </td>
+    </tr>
+  </table>
+  <div id="add">
+    <input class="form" [(ngModel)]="name" type="text" placeholder="Element Name">
+    <input class="form" [(ngModel)]="symbol" type="text" placeholder="Element Symbol">
+    <input class="form" [(ngModel)]="atomicNumber" type="text" placeholder="Atomic Number">
+    <input class="form" [(ngModel)]="atomicWeight" type="text" placeholder="Atomic Weight">
+    <input class="form" [(ngModel)]="discovered" type="text" placeholder="Year Discovered">
+    <button (click)="addElement(name, symbol, atomicNumber, atomicWeight, discovered)">Add Element</button>
+  </div>
+</div>
