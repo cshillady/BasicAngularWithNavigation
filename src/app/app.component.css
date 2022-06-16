@@ -1,24 +1,47 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: darkgoldenrod;
-  font-weight: bolder;
 }
 h1 {
+  background-color: cyan;
   padding: 8px;
   font-style: italic;
-  color: white;
+  color: darkcyan;
+  height: 45px;
 }
 nav {
+  display: flex;
   background-color: darkcyan;
-  padding: 16px;
+  height: 51px;
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-items {
+  display: flex;
+  flex-direction: row;
+}
+span {
+  padding-top: 16px;
 }
 a {
   background-color: darkcyan;
+  font-weight: light;
+  color: cyan;
+  padding: 16px;
+  vertical-align: center;
 }
 a:hover {
   color: white;
 }
 span {
   background-color: darkcyan;
+  height: 51px;
+
+  vertical-align: center;
 }

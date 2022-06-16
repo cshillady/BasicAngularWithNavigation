@@ -1,0 +1,17 @@
+#if {
+  background-color: darkblue;
+  color:  lightblue;
+  padding: 80px;
+}
+input {
+  height: 10px;
+}
+label {
+  height: 80px;
+}
+#switch {
+  background: lightskyblue;
+  color: darkblue;
+  padding: 80px;
+  padding-bottom: 30%
+}

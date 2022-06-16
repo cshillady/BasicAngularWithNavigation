@@ -1,11 +1,13 @@
 * {
-  background-color: chartreuse;
+  background-color: lightskyblue;
 }
 .form {
   padding: 12px;
+  padding-left: 20px;
 }
 .form input {
   background-color: white;
+  margin-left: 20px;
 }
 .entry {
   padding-top: 20px;

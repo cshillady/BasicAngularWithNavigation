@@ -1,0 +1,27 @@
+<div>
+  <div id="if">
+    <h1 *ngIf="isAmazing; else elseBlock">Connor Shillady is an amazing coder.</h1>
+    <ng-template #elseBlock>
+      <h1>Connor Shillady is a great coder.</h1>
+    </ng-template>
+    <div class="checkbox">
+      <label>
+        <input class="check" [(ngModel)]="isAmazing" type="checkbox" data-toggle="toggle"><label>Amazing?</label>
+      </label>
+    </div>
+  </div>
+  <div id="switch">
+    <div>
+      <div [ngSwitch]="day">
+        <div *ngSwitchCase = "0"><h1>Today is Sunday:  You deserve a day of relaxation!</h1></div>
+        <div *ngSwitchCase = "1"><h1>Today is Monday:  I hope you easy week!</h1></div>
+        <div *ngSwitchCase = "2"><h1>Today is Tuesday:  Keep up the good work!</h1></div>
+        <div *ngSwitchCase = "3"><h1>Today is Wednesday:  It's Hump Day!!</h1></div>
+        <div *ngSwitchCase = "4"><h1>Today is Thursday:  You are almost there...</h1></div>
+        <div *ngSwitchCase = "5"><h1>Today is Friday:  TGIF!!!</h1></div>
+        <div *ngSwitchCase = "6"><h1>Today is Saturday:  Let's have som FUN!! :) </h1></div>
+        <div *ngSwitchDefault>Uh oh! Something is wrong.  :( </div>
+      </div>
+    </div>
+  </div>
+</div>

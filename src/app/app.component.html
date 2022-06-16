@@ -1,9 +1,13 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="page1">1-Way Binding</a>
-  <span> | </span>
-  <a routerLink="page2">2-Way Binding</a>
-  <span> | </span>
-  <a routerLink="page3">Array/Table</a>
-</nav>
+<div id="head"><h1>{{title}}</h1></div>
+<div class="flex-container">
+  <nav class="flex-container">
+    <div class="flex-item"><a routerLink="page1">1-Way Binding</a></div>
+    <div class="flex-item"><span> | </span></div>
+    <div class="flex-item"><a routerLink="page2">2-Way Binding</a></div>
+    <div class="flex-item"><span> | </span></div>
+    <div class="flex-item"><a routerLink="page3">Array/Table</a></div>
+    <div class="flex-item"><span> | </span></div>
+    <div class="flex-item"><a routerLink="page4">Ng If/Switch</a></div>
+  </nav>
+</div>
 <router-outlet></router-outlet>
