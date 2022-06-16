@@ -1,0 +1,54 @@
+<div id="main">
+  <div id="date" class="g1">
+    <table>
+      <tr>
+        <td>Unformatted Date:</td>
+        <td>{{ today }}</td>
+      </tr>
+      <tr>
+        <td>Short Date:</td>
+        <td>{{ today | date: 'shortDate' }}</td>
+      </tr>
+      <tr>
+        <td>Medium Time:</td>
+        <td>{{ today | date: 'mediumTime' }}</td>
+      </tr>
+      <tr>
+        <td>Custom Date:</td>
+        <td>{{ today | date: 'EEEE, MMMM d, yyyy | hh:mm:ss aaaa' }}</td>
+      </tr>
+    </table>
+  </div>
+  <div id="currency" class="g2">
+    <table>
+      <tr>
+        <td>Unformatted Currency:</td>
+        <td>{{ money }}</td>
+      </tr>
+      <tr>
+        <td>Formatted Currency, USD:</td>
+        <td>{{ money | currency }}</td>
+      </tr>
+      <tr>
+        <td>Formatted Currency, Euro:</td>
+        <td>{{ money | currency : 'EUR' : 'symbol' }}</td>
+      </tr>
+    </table>
+  </div>
+  <div id="string" class="g3">
+    <table>
+      <tr>
+        <td>Unformatted String:</td>
+        <td>{{ words }}</td>
+      </tr>
+      <tr>
+        <td>Titlecase String:</td>
+        <td>{{ words | titlecase }}</td>
+      </tr>
+      <tr>
+        <td>Uppercase String:</td>
+        <td>{{ words | uppercase }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

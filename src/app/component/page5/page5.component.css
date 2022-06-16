@@ -1,0 +1,46 @@
+#main {
+  font-size: 24px;
+}
+#date {
+  height: 232px;
+  background-color: peachpuff;
+  color: darkorange;
+  font-weight: light;
+  padding: 24px;
+}
+.g1 {
+  font-family: 'Tourney', arial, sans-serif;
+  font-size: 32px;
+}
+#currency {
+  height: 208px;
+  background-color: palegreen;
+  color: darkgreen;
+  padding: 24px;
+}
+.g2 {
+  font-family: 'Potta One', cursive;
+  font-size: 32px;
+}
+#string {
+  height: 400px;
+  background-color: plum;
+  color: indigo;
+  font-weight: bold;
+  padding: 24px;
+}
+.g3 {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 32px;
+}
+table {
+  border-collapse: collapse;
+  align-items: center;
+  width: 60%;
+}
+td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+  border: 2px solid black;
+}
