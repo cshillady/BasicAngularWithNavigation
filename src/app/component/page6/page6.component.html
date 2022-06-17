@@ -1,0 +1,28 @@
+<div id="main">
+  <div>
+    <h1>Book Request List</h1>
+    <button type="button" (click)="getBooks()"><strong>Get Book List</strong></button>
+  </div>
+  <div id="table" class="table-responsive">
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Book Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Pages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books; let i = index, let o = odd; let e = even" [ngClass]="{ even: e, odd: o }">
+          <td>{{ i + 1 }}</td>
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.genre }}</td>
+          <td>{{ book.pageCount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
